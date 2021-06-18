@@ -215,12 +215,10 @@ header nav .searchbar input {
 header nav .searchbar input:focus {
   outline: none;
   border: none;
-  padding-left: 3px;
 }
 
 header nav .searchbar i {
   position: absolute;
-  padding-left: 3px;
   right: 0;
 }
 
