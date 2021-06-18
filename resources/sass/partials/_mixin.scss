@@ -1,0 +1,22 @@
+@mixin list_horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin list_reset {
+    margin-left: 0;
+    list-style: none;
+//    @include list_horizontal;
+} 
+
+@mixin flex_align_center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex_dir_col {
+    flex-direction: column;
+    display: flex;
+}
+
