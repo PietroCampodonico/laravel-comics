@@ -1,0 +1,82 @@
+//MI COMPILA ALL'INFINITO
+
+/* .hero {
+    background-image: url("../../../public/images/jumbotron.jpg");
+}*/
+
+main section.row.top.hero {
+    max-height: 360px;
+    overflow: hidden;
+}
+
+main section.row.center {
+    background-color: $background_secondary_color;
+    padding: $spacing 0;
+
+    .wrapper {
+        @include flex_align_center
+    }
+
+    .comics-card {
+        @include default_card_dimensions;
+        margin: $spacing $spacing/3;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.03);
+            transition: $transition_duration;
+        }
+        
+        .thumbnail-container {
+           @include default_card_dimensions;
+            overflow: hidden;
+        }
+
+        h4 {
+            margin: $spacing/3 0;
+
+            a {
+                color: $font_color;
+            }
+        }
+    }
+
+    .btn-container {
+        @include flex_justify_center;
+        margin-top: $spacing;
+    }
+}
+
+main section.row.bottom {
+    background-color: $background_primary_color;
+
+    .wrapper {
+        display: flex;
+    }
+
+    .card {
+        @include flex_align_justify_center;
+        flex-basis: calc(100% / 5);
+        margin: $spacing 0;
+        
+        * {
+            vertical-align: middle;
+            text-transform: uppercase;
+            color: $font_color;
+        }
+
+        .icon-container {
+            @include default_icon_container;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        a {
+            padding-left: 10px;
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+    }
+}

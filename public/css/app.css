@@ -43,8 +43,23 @@ input[type=text] {
   max-width: 100%;
 }
 
-.row {
-  display: flex;
+button {
+  padding: 10px 35px;
+  background-color: #0282f9;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+  opacity: 0.8;
+}
+
+button:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .col-1 {
@@ -168,10 +183,6 @@ header .row.top .wrapper div {
   margin: 5px 0 5px 60px;
 }
 
-header nav {
-  margin: 15px 0;
-}
-
 header nav .wrapper {
   display: flex;
   align-items: center;
@@ -179,8 +190,8 @@ header nav .wrapper {
 }
 
 header nav .logo-container {
-  max-height: 75px;
-  max-width: 75px;
+  max-height: 70px;
+  max-width: 70px;
 }
 
 header nav li {
@@ -194,6 +205,7 @@ header nav li {
 
 header nav li:hover {
   border-bottom: 3px solid #0282f9;
+  transition: 0.5s;
 }
 
 header nav .searchbar {
@@ -225,5 +237,95 @@ header nav .searchbar i {
 header nav .searchbar i:hover {
   color: #0282f9;
   transform: scale(1.1);
+}
+
+/* .hero {
+    background-image: url("../../../public/images/jumbotron.jpg");
+}*/
+
+main section.row.top.hero {
+  max-height: 360px;
+  overflow: hidden;
+}
+
+main section.row.center {
+  background-color: #1c1c1c;
+  padding: 30px 0;
+}
+
+main section.row.center .wrapper {
+  display: flex;
+  align-items: center;
+}
+
+main section.row.center .comics-card {
+  max-height: 150px;
+  max-width: 150px;
+  margin: 30px 10px;
+}
+
+main section.row.center .comics-card:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+
+main section.row.center .comics-card .thumbnail-container {
+  max-height: 150px;
+  max-width: 150px;
+  overflow: hidden;
+}
+
+main section.row.center .comics-card h4 {
+  margin: 10px 0;
+}
+
+main section.row.center .comics-card h4 a {
+  color: white;
+}
+
+main section.row.center .btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+main section.row.bottom {
+  background-color: #0282f9;
+}
+
+main section.row.bottom .wrapper {
+  display: flex;
+}
+
+main section.row.bottom .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc(100% / 5);
+  margin: 30px 0;
+}
+
+main section.row.bottom .card * {
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: white;
+}
+
+main section.row.bottom .card .icon-container {
+  width: 40px;
+  height: 40px;
+}
+
+main section.row.bottom .card .icon-container:hover {
+  cursor: pointer;
+}
+
+main section.row.bottom .card a {
+  padding-left: 10px;
+}
+
+main section.row.bottom .card a:hover {
+  transform: scale(1.03);
 }
 

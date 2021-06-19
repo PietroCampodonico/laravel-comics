@@ -41,3 +41,7 @@ input[type="text"] {
     border:none;
     max-width: 100%;
 }
+
+button {
+    @include btn_default;
+}

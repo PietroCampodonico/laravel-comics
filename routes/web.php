@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('myLandingPage');
+    $comicsData = config("comics");
+    
+    $viewData = [
+        "comicsList" => $comicsData
+    ];
+
+    return view('myLandingPage', $viewData);
 });

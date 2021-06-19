@@ -16,15 +16,13 @@ header .row.top {
 }
 
 header nav{
-    margin: $spacing/2 0;
     .wrapper {
         @include flex_align_center;
         justify-content: space-between;
     }
 
     .logo-container {
-        max-height: 75px;
-        max-width: 75px;
+        @include small_logo_dimension;
     }
 
     li {
@@ -36,6 +34,7 @@ header nav{
 
         &:hover {
             border-bottom: 3px solid $background_primary_color;
+            transition: $transition_duration;
         }
     }
 
@@ -61,7 +60,7 @@ header nav{
 
         i {
             position: absolute;
-                right: 0;
+            right: 0;
         }
 
        i:hover {

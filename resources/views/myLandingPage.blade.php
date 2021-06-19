@@ -66,15 +66,89 @@
                     <input type="text" placeholder='Search...'>
                     <i class=" fas fa-search"></i>
                 </div>
-
-
-
-
-
             </div>
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <section class="row top hero">
+            <img src="{{asset('images/jumbotron.jpg')}}" alt="">
+        </section>
+
+        <section class="row center">
+            <div class="wrapper">
+
+                @foreach($comicsList as $comics)
+                    <div class="comics-card">
+
+                        <div class="thumbnail-container">
+                            <img src="{{ $comics['thumb'] }}" alt="">
+                        </div>
+
+                        <h4><a href="#">{{ $comics["title"] }}</a></h4>
+
+                    </div>
+                    
+                @endforeach
+
+            </div>
+            <div class="btn-container">
+                <button>Load more</button>
+            </div>
+        </section>
+
+        <section class="row bottom">
+            <div class="wrapper">
+            
+                <div class="card">
+
+                    <div class="icon-container">
+                        <img src="{{asset('images/buy-comics-digital-comics.png')}}" alt="">
+                    </div>
+
+                    <a href="#">digital comics</a>
+                </div>
+
+                <div class="card">
+
+                    <div class="icon-container">
+                        <img src="{{asset('images/buy-comics-merchandise.png')}}" alt="">
+                    </div>
+
+
+                    <a href="#">dc merchandise</a>
+                </div>
+
+                <div class="card">
+
+                    <div class="icon-container">
+                        <img src="{{asset('images/buy-comics-subscriptions.png')}}" alt="">
+                    </div>
+
+
+                    <a href="#">subscription</a>
+                </div>
+
+                <div class="card">
+
+                    <div class="icon-container">
+                        <img src="{{asset('images/buy-comics-shop-locator.png')}}" alt="">
+                    </div>
+
+                    <a href="#">comic shop locator</a>
+                </div>
+
+                <div class="card">
+
+                    <div class="icon-container">
+                        <img src="{{asset('images/buy-dc-power-visa.svg')}}" alt="">
+                    </div>
+
+                    <a href="#">dc power visa</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
     <footer></footer>
 @endsection
