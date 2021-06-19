@@ -78,6 +78,10 @@
         <section class="row center">
             <div class="wrapper">
 
+                <button>
+                    <h1>current series</h1>
+                </button>
+
                 @foreach($comicsList as $comics)
                     <div class="comics-card">
 

@@ -254,6 +254,19 @@ main section.row.center {
 main section.row.center .wrapper {
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+main section.row.center .wrapper button {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+main section.row.center .wrapper button:hover {
+  text-decoration: unset;
+  cursor: unset;
 }
 
 main section.row.center .comics-card {
@@ -284,7 +297,7 @@ main section.row.center .comics-card h4 a {
 main section.row.center .btn-container {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 main section.row.bottom {

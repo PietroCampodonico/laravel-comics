@@ -8,7 +8,19 @@ main section.row.center {
     padding: $spacing 0;
 
     .wrapper {
-        @include flex_align_center
+        @include flex_align_center;
+        position: relative;
+
+        button {
+            position: absolute;
+            top: -30px;
+            left: 0;
+            transform: translateY(-50%);
+            &:hover {
+                text-decoration: unset;
+                cursor: unset;
+            }
+        }
     }
 
     .comics-card {
@@ -36,7 +48,7 @@ main section.row.center {
 
     .btn-container {
         @include flex_justify_center;
-        margin-top: $spacing;
+        margin-top: $spacing*2;
     }
 }
 
