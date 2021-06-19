@@ -1,9 +1,3 @@
-//MI COMPILA ALL'INFINITO
-
-/* .hero {
-    background-image: url("../../../public/images/jumbotron.jpg");
-}*/
-
 main section.row.top.hero {
     max-height: 360px;
     overflow: hidden;
@@ -24,7 +18,6 @@ main section.row.center {
         &:hover {
             cursor: pointer;
             transform: scale(1.03);
-            transition: $transition_duration;
         }
         
         .thumbnail-container {
@@ -58,7 +51,7 @@ main section.row.bottom {
         @include flex_align_justify_center;
         flex-basis: calc(100% / 5);
         margin: $spacing 0;
-        
+
         * {
             vertical-align: middle;
             text-transform: uppercase;
@@ -74,8 +67,10 @@ main section.row.bottom {
 
         a {
             padding-left: 10px;
+
             &:hover {
-                transform: scale(1.03);
+                cursor: pointer;
+                text-decoration: underline;
             }
         }
     }

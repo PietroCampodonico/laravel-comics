@@ -33,6 +33,7 @@ header nav{
         border-bottom: 3px solid transparent;
 
         &:hover {
+            cursor: pointer;
             border-bottom: 3px solid $background_primary_color;
             transition: $transition_duration;
         }
