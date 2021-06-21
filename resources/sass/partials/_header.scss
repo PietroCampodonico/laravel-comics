@@ -2,7 +2,7 @@ header {
     font-weight: bold;
 }
 
-header .row.top {
+header section.row.top {
     background-color: $background_primary_color;
     color: $font_color;
 
@@ -70,4 +70,10 @@ header nav{
         }
     }
 }
+
+header section.row.bottom.hero {
+    max-height: 360px;
+    overflow: hidden;
+}
+
 

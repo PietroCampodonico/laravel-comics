@@ -21,4 +21,20 @@ Route::get('/', function () {
     ];
 
     return view('myLandingPage', $viewData);
-});
+})->name("home");
+
+
+Route::get('/comic/{index}', function ($index) {
+    $comicsData = config("comics");
+
+    if(!is_numeric($index) || $index < 0 || $index > count($comicsData) -1) {
+        abort(404, "Fumetto inesistente o non ancora disponibile");
+    }
+
+    $selectedComic = $comicsData[intval($index)];
+
+    return view('specificComicPage', [
+        "comic" => $selectedComic
+    ]);
+})->name("specific-comic-page");
+

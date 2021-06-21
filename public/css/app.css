@@ -170,17 +170,17 @@ header {
   font-weight: bold;
 }
 
-header .row.top {
+header section.row.top {
   background-color: #0282f9;
   color: white;
 }
 
-header .row.top .wrapper {
+header section.row.top .wrapper {
   display: flex;
   justify-content: flex-end;
 }
 
-header .row.top .wrapper div {
+header section.row.top .wrapper div {
   margin: 5px 0 5px 60px;
 }
 
@@ -241,60 +241,60 @@ header nav .searchbar i:hover {
   transform: scale(1.1);
 }
 
-main section.row.top.hero {
+header section.row.bottom.hero {
   max-height: 360px;
   overflow: hidden;
 }
 
-main section.row.center {
+main section.row.top {
   background-color: #1c1c1c;
   padding: 30px 0;
 }
 
-main section.row.center .wrapper {
+main section.row.top .wrapper {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-main section.row.center .wrapper button {
+main section.row.top .wrapper button {
   position: absolute;
   top: -30px;
   left: 0;
   transform: translateY(-50%);
 }
 
-main section.row.center .wrapper button:hover {
+main section.row.top .wrapper button:hover {
   text-decoration: unset;
   cursor: unset;
 }
 
-main section.row.center .comics-card {
+main section.row.top .comics-card {
   max-height: 150px;
   max-width: 150px;
   margin: 30px 10px;
 }
 
-main section.row.center .comics-card:hover {
+main section.row.top .comics-card:hover {
   cursor: pointer;
   transform: scale(1.03);
 }
 
-main section.row.center .comics-card .thumbnail-container {
+main section.row.top .comics-card .thumbnail-container {
   max-height: 150px;
   max-width: 150px;
   overflow: hidden;
 }
 
-main section.row.center .comics-card h4 {
+main section.row.top .comics-card h4 {
   margin: 10px 0;
 }
 
-main section.row.center .comics-card h4 a {
+main section.row.top .comics-card h4 a {
   color: white;
 }
 
-main section.row.center .btn-container {
+main section.row.top .btn-container {
   display: flex;
   justify-content: center;
   margin-top: 60px;
@@ -338,6 +338,155 @@ main section.row.bottom .card a {
 main section.row.bottom .card a:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+main .stripe {
+  background-color: #0282f9;
+  height: 75px;
+}
+
+main .comic-specifics {
+  padding: 60px 0;
+}
+
+main .comic-specifics .wrapper {
+  display: flex;
+}
+
+main .comic-specifics h1 {
+  color: #124261;
+  margin-bottom: 30px;
+}
+
+main .availability {
+  background-color: #55ba59;
+  display: flex;
+  align-items: center;
+}
+
+main .availability > [class^=col-] {
+  display: flex;
+  align-items: center;
+}
+
+main .availability P,
+main .availability select {
+  color: #82df7d;
+  padding: 10px;
+}
+
+main .availability P span,
+main .availability P option,
+main .availability select span,
+main .availability select option {
+  color: white;
+}
+
+main .availability select {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+main .availability .col-9 {
+  justify-content: space-between;
+  border-right: 1px solid rgba(128, 128, 128, 0.9);
+}
+
+main .comic-description {
+  padding-top: 10px;
+  max-height: 150px;
+  overflow: auto;
+}
+
+main .advertisement {
+  position: relative;
+}
+
+main .advertisement img {
+  max-height: 175px;
+}
+
+main .advertisement h5 {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  transform: translateX(-75%);
+}
+
+main .additional-info {
+  background-color: #f6f6f6;
+}
+
+main .additional-info .wrapper {
+  display: flex;
+  padding: 30px 0;
+}
+
+main .additional-info .wrapper .col-8 {
+  padding-right: 60px;
+}
+
+main .additional-info a {
+  color: #7dbfe3;
+  font-weight: bold;
+}
+
+main .additional-info a:not(:last-of-type)::after {
+  content: ",";
+  color: black;
+}
+
+main .additional-info h2 {
+  color: #124261;
+  margin-bottom: 30px;
+}
+
+main .additional-info .line {
+  padding: 10px 0;
+  border-top: 1px solid lightgray;
+}
+
+main .additional-info .line:last-of-type {
+  border-bottom: 1px solid lightgray;
+}
+
+main .utility-links {
+  border-top: 1px solid lightgray;
+}
+
+main .utility-links .wrapper,
+main .utility-links .col-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .utility-links .wrapper {
+  padding: 0;
+}
+
+main .utility-links .col-3 {
+  padding: 10px 15px;
+  border-left: 1px solid lightgray;
+}
+
+main .utility-links .col-3:last-of-type {
+  border-right: 1px solid lightgray;
+}
+
+main .utility-links .col-3 h5 {
+  text-transform: uppercase;
+  color: lightgrey;
+}
+
+main .utility-links .icon-container {
+  width: 40px;
+  height: 40px;
+}
+
+main .utility-links .icon-container img {
+  background-color: grey;
 }
 
 footer .row.top {
