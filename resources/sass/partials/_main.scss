@@ -87,6 +87,28 @@ main section.row.bottom {
 main .stripe {
     background-color: $background_primary_color;
     height: 75px;
+
+    .img-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateY(-85%);
+        max-height: 250px;
+        max-width: 175px;
+        border: 1px solid white;
+        overflow: hidden;
+
+        button {
+            position: absolute;
+            padding: 5px $spacing/3;
+
+            &.bottom-btn {
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
 }
 
 main .comic-specifics {
@@ -163,7 +185,7 @@ main .additional-info {
         display: flex;
         padding: $spacing 0;
 
-        .col-8 {
+        &>.col-8 {
             padding-right: $spacing*2;
         }
     }
@@ -186,9 +208,14 @@ main .additional-info {
     .line {
         padding: $spacing/3 0;
         border-top: 1px solid lightgray;
+        display: flex;
 
         &:last-of-type {
             border-bottom: 1px solid lightgray;
+        }
+
+        span {
+            display: inline-block;
         }
     }
 }

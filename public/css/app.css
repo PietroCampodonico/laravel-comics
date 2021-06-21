@@ -345,6 +345,28 @@ main .stripe {
   height: 75px;
 }
 
+main .stripe .img-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translateY(-85%);
+  max-height: 250px;
+  max-width: 175px;
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+main .stripe .img-container button {
+  position: absolute;
+  padding: 5px 10px;
+}
+
+main .stripe .img-container button.bottom-btn {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 main .comic-specifics {
   padding: 60px 0;
 }
@@ -424,7 +446,7 @@ main .additional-info .wrapper {
   padding: 30px 0;
 }
 
-main .additional-info .wrapper .col-8 {
+main .additional-info .wrapper > .col-8 {
   padding-right: 60px;
 }
 
@@ -446,10 +468,15 @@ main .additional-info h2 {
 main .additional-info .line {
   padding: 10px 0;
   border-top: 1px solid lightgray;
+  display: flex;
 }
 
 main .additional-info .line:last-of-type {
   border-bottom: 1px solid lightgray;
+}
+
+main .additional-info .line span {
+  display: inline-block;
 }
 
 main .utility-links {

@@ -5,7 +5,15 @@
 @section('main_content')
 
 <div class="stripe">
-    <div class="wrapper"></div>
+    <div class="wrapper">
+        <div class="img-container">
+        
+            <button class="top-btn">COMIC BOOK</button>
+            <img src="{{ $comic['thumb'] }}" alt="">
+            <button class="bottom-btn">VIEW GALLERY</button>
+
+        </div>
+    </div>
 </div>
 
 <div class="comic-specifics">
@@ -58,23 +66,23 @@
             <h2>Talent</h2>
 
             <div class="line">
-                <span>Art by:</span>
+                <span class="col-4">Art by:</span>
 
-                    <span>
-                        @foreach($comic['artists'] as  $artist)
-                            <a href="#">{{ $artist }}</a>
-                        @endforeach
-                    </span>
+                <span class="col-8">
+                    @foreach($comic['artists'] as  $artist)
+                        <a href="#">{{ $artist }}</a>
+                    @endforeach
+                </span>
+                    
             </div>
 
             <div class="line">
-                <span>Written by:</span>
+                <span class="col-4">Written by:</span>
 
-                <span>
-                @foreach($comic['writers'] as $writer)
-                    <a href="#">{{ $writer }}</a>
-                @endforeach
-
+                <span class="col-8">
+                    @foreach($comic['writers'] as $writer)
+                        <a href="#">{{ $writer }}</a>
+                    @endforeach
                 </span>
 
             </div>
@@ -86,22 +94,22 @@
             
             <div class="line">
 
-                <span>Series:</span>
-                <span>
+                <span class="col-5">Series:</span>
+                <span class="col-7">
                     <a href="">ACTION COMICS</a>
                 </span>
             </div>
 
             <div class="line">
 
-                <span>U.S. Price:</span>
-                <span>{{ $comic['price'] }}</span>
+                <span class="col-5">U.S. Price:</span>
+                <span class="col-7">{{ $comic['price'] }}</span>
 
             </div>
 
             <div class="line">
-                <span>On Sale Date:</span>
-                <span>{{ $comic['sale_date'] }}</span>
+                <span class="col-5">On Sale Date:</span>
+                <span class="col-7">{{ $comic['sale_date'] }}</span>
             </div>
         </div>
 
